@@ -1,0 +1,70 @@
+@use "./common" as *;
+
+.footer {
+  margin-bottom: 50px;
+
+  &__container {
+    border-top: 1px solid $grey-600;
+    padding-top: 26px;
+
+    @media (min-width: 575px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__company-name {
+    margin-bottom: 15px;
+    color: $absolute-black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+
+    span {
+      color: $grey-400;
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 575px) {
+      margin-bottom: 0;
+      font-size: 30px;
+
+      span {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 36px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__text {
+    width: 294px;
+    color: $grey-300;
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+
+    @media (min-width: 575px) {
+      width: auto;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+}

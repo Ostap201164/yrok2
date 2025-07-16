@@ -1,0 +1,81 @@
+$absolute-white: #fff;
+$absolute-black: #000;
+$grey-300: #8f95a5;
+$blue-900: #263238;
+$blue-800: #2a3246;
+$grey-200: #f5f5f5;
+$grey-100: #eee;
+$grey-400: #939393;
+$grey-500: #546269;
+$grey-600: #c4c4c4;
+
+body {
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  width: 290px;
+  margin: 0 auto;
+  background-color: $absolute-white;
+}
+
+.container_defoult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 575px) {
+  .container {
+    width: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 711px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 930px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+
+  /*position: static;
+width: auto;
+height: auto;
+margin: 0;
+border: initial;
+padding: 0;
+white-space: normal;
+clip-path: none;
+clip: auto;
+overflow: visible;
+*/
+}
+
+body[lock] {
+  overflow: hidden;
+}

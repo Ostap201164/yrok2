@@ -1,0 +1,151 @@
+@use "./common" as *;
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 29px;
+
+  @media (min-width: 575px) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__company-name {
+    color: $absolute-black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+
+    span {
+      color: $grey-400;
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 575px) {
+      font-size: 30px;
+      
+      span {
+        font-size: 30px;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 36px;
+      
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__burger-img {
+    width: 34px;
+    height: 19px;
+
+    @media (min-width: 575px) {
+      width: 42px;
+      height: 24px;
+    }
+  }
+
+  &__burger-menu {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+    overflow: visible;
+    cursor: pointer;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+
+  &__list {
+    display: none;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+    overflow: visible;
+
+    @media (min-width: 992px) {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      color: $blue-900;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 20px;
+    }
+  }
+
+  &__lets-talk {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 14px 56px;
+      border: 2px solid $blue-900;
+      border-radius: 5px;
+      background-color: transparent;
+      color: $absolute-black;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 400;
+      white-space: normal;
+      clip: auto;
+      clip-path: none;
+      overflow: visible;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+}

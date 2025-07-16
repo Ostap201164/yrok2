@@ -1,0 +1,226 @@
+@use "./common" as *;
+
+.pricing {
+  margin-bottom: 72px;
+
+  @media (min-width: 992px) {
+    margin-bottom: 136px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: $absolute-black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media (min-width: 575px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 36px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 48px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+
+    @media (min-width: 575px) {
+      row-gap: 70px;
+    }
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      column-gap: 50px;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 268px);
+      column-gap: 63px;
+    }
+
+    @media (min-width: 1600px) {
+      grid-template-columns: repeat(3, 420px);
+      column-gap: 70px;
+    }
+  }
+
+  &__img {
+    width: 248px;
+    height: 248px;
+    margin-bottom: 28px;
+
+    @media (min-width: 575px) {
+      width: 290px;
+      height: 290px;
+    }
+
+    @media (min-width: 768px) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: 992px) {
+      width: 250px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 330px;
+      height: 340px;
+    }
+  }
+
+  &__description-of-product {
+    text-align: center;
+    margin-bottom: 17px;
+    color: $blue-800;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (min-width: 575px) {
+      font-size: 24px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      width: 174px;
+      text-align: unset;
+    }
+
+    @media (min-width: 992px) {
+      width: 266px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    color: $grey-300;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 33px;
+
+    @media (min-width: 575px) {
+      font-size: 14px;
+      &_cource {
+        width: 394px;
+      }
+      &_clases {
+        width: 329px;
+      }
+      &_tuition {
+        width: 360px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 198px;
+      text-align: unset;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+      width: 268px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 420px;
+      font-size: 20px;
+    }
+  }
+
+  &__price-container {
+    display: flex;
+    width: 170px;
+    padding: 5px;
+    gap: 6px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: $grey-100;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 575px) {
+      padding: 10px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 240px;
+    }
+  }
+
+  &__subcontainer {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__number {
+    color: $blue-800;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media (min-width: 575px) {
+      font-size: 24px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 30px;
+    }
+  }
+
+  &__per-month-text {
+    color: $grey-500;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+
+    @media (min-width: 575px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 18px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      height: 100%;
+      align-items: start;
+      justify-items: unset;
+      justify-content: space-between;
+      gap: 23px;
+    }
+
+    @media (min-width: 992px) {
+      gap: 31px;
+    }
+
+    @media (min-width: 1600px) {
+      gap: 29px;
+    }
+  }
+}

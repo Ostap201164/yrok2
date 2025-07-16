@@ -1,0 +1,14 @@
+@use './reset';
+@use './common';
+
+@use './header';
+@use './learn-langyage';
+@use './skils';
+@use './about';
+@use './pricing';
+@use './contact';
+@use './footer';
+@use './burger';
+
+@use './common' as *;
+@use './animation.scss';
